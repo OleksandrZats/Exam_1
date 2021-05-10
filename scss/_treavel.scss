@@ -1,0 +1,20 @@
+.travel {
+  background: url(../img/render-1477041_12801.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 220px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &--right {
+    background-image: url(../img/spain-1859434_12801.jpg);
+    justify-content: flex-end;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+    &__info {
+      width: 100%;
+    }
+  }
+}

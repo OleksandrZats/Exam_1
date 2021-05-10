@@ -1,0 +1,19 @@
+.tourist-say {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../img/BG.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: var(--white);
+  &__title {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    height: auto;
+    min-height: 100vh;
+  }
+}

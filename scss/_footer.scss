@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white);
+  background-color: var(--black);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+}

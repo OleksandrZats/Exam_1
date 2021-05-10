@@ -1,0 +1,28 @@
+.quote {
+  padding: 40px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dark-gray);
+
+  &__name {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    text-indent: 1.5em;
+    text-align: justify;
+    position: relative;
+    &::before {
+      content: "";
+      background: url(../icons/quote-left.svg) center center no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: -6px;
+    }
+  }
+}

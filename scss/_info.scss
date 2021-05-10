@@ -1,0 +1,17 @@
+.info {
+  background: rgba(35, 35, 35, 0.9);
+  width: 50%;
+  padding: 45px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--white);
+  &__country,
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__body {
+    margin-bottom: 24px;
+  }
+}
