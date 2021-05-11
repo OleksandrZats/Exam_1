@@ -1,0 +1,33 @@
+.main {
+  &__section {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  @media (max-width: 1360px) {
+    &__section {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__section {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__section {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  @media (max-width: 576px) {
+    &__section {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+}

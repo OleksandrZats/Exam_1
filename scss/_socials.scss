@@ -1,0 +1,16 @@
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 275px;
+  &__link {
+    text-decoration: none;
+    color: var(--white);
+
+    font-size: 32px;
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.choose-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 125px;
+  padding-bottom: 125px;
+
+  background: url(../img/WhyBackground.jpg) center center no-repeat;
+  background-size: cover;
+
+  color: var(--white);
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 120px;
+  }
+  &__heading {
+    margin-bottom: 24px;
+  }
+  &__text {
+    margin-bottom: 24px;
+  }
+  &__right {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+    width: 82%;
+    height: auto;
+  }
+  &__img:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  &__img:nth-child(odd) {
+    align-self: flex-start;
+  }
+  &__img:nth-child(even) {
+    align-self: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0px;
+    }
+    &__right {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &__img {
+      align-self: center;
+      width: 48%;
+      height: 100%;
+    }
+    &__img:not(:last-child) {
+      margin-right: 2%;
+    }
+    &__img:nth-child(odd) {
+      align-self: unset;
+    }
+    &__img:nth-child(even) {
+      align-self: unset;
+    }
+  }
+}
